@@ -2,4 +2,4 @@
 
 . "/dev/shm/ar18/screen_scale/$(whoami)/vars"
 
-xrandr --output LVDS1 --scale ${factor}x${factor}
+xrandr --output "$(xrandr | sed -n 2p | cut -d ' ' -f1)" --scale ${factor}x${factor}
