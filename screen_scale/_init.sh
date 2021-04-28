@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ ! -d "/dev/shm/ar18/screen_scale/$(whoami)" ]; then
   mkdir -p "/dev/shm/ar18/screen_scale/$(whoami)"

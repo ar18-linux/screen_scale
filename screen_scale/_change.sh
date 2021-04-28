@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 . "/dev/shm/ar18/screen_scale/$(whoami)/vars"
 
