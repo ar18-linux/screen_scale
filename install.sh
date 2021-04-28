@@ -13,4 +13,5 @@ if [ ! -d "${install_dir}" ]; then
   mkdir -p "${install_dir}"
 fi
 
-cp -rf "${script_dir}/screen_scale" "${install_dir}/"
+rm -rf "${install_dir}/${module_name}"
+cp -rf "${script_dir}/${module_name}" "${install_dir}/${module_name}"
