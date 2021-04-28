@@ -1,7 +1,9 @@
 #!/bin/bash
 
-. ./_init.sh
+script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+. "${script_dir}/_init.sh"
 
 echo "factor=1" > "/dev/shm/ar18/screen_scale/$(whoami)/vars"
 
-./_change.sh
+"${script_dir}/_change.sh"
