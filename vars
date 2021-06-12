@@ -1,4 +1,5 @@
-if [ -z "${install_dir+x}" ]; then
+module_name="screen_scale"
+
+if [ ! -v install_dir ]; then
   install_dir="/opt/ar18"
 fi
-module_name="screen_scale"
